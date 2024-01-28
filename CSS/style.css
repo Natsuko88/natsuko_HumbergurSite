@@ -1,7 +1,17 @@
-body {
+html {
   font-size: 62.5%;
+}
+
+body {
   font-family: "M+PLUS+1", "Roboto";
+  font-size: 1.6rem;
   font-weight: 700;
+  width: 100%;
+}
+
+.l-header {
+  width: 81%;
+  background-color: #FFF7EF;
 }
 
 .c-button {
@@ -10,5 +20,14 @@ body {
 
 .c-button:hover {
   opacity: 0.5;
+}
+
+.c-button--menu {
+  color: #707070;
+}
+
+.c-logo {
+  color: #707070;
+  font-family: "Robot";
 }
 /*# sourceMappingURL=style.css.map */
