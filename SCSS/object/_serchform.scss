@@ -1,0 +1,8 @@
+@use "../foundation" as f;
+
+.c--serchform{
+    background-color: f.$color-white;
+    border: 1px solid;
+    border-color: f.$color-gray;
+    border-radius: 10px;
+}

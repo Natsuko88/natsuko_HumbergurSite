@@ -9,8 +9,13 @@ body {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .l-header {
   width: 81%;
+  height: 217px;
   background-color: #FFF7EF;
 }
 
@@ -29,5 +34,20 @@ body {
 .c-logo {
   color: #707070;
   font-family: "Robot";
+}
+
+.c-button--serch {
+  background-color: #DED8D3;
+  color: #707070;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color: liner-gradient(#F2EDE9, #707070);
+}
+
+.c--serchform {
+  background-color: #FFFFFF;
+  border: 1px solid;
+  border-color: #707070;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=style.css.map */
