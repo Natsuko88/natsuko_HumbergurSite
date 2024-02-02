@@ -1,0 +1,12 @@
+.p-serch{
+    position:relative;
+
+    /*虫眼鏡マークは疑似要素*/
+    ::before{
+        content: url(../../img/serch.png);
+        display:inline-block;
+        width:auto;
+        height:auto;
+        position:absolute;
+}
+}
