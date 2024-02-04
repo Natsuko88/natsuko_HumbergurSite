@@ -20,6 +20,10 @@ a {
   background-color: #FFF7EF;
 }
 
+.l-main-article {
+  width: 81%;
+}
+
 .c-button {
   cursor: pointer;
 }
@@ -62,5 +66,36 @@ a {
   width: auto;
   height: auto;
   position: absolute;
+}
+
+.c-page-title {
+  color: #FFFFFF;
+}
+
+.p-tophead {
+  background-image: url(../../img/mainvisual-pc.jpg);
+  background-size: cover;
+  height: 530px;
+}
+
+.c-content-title {
+  position: relative;
+  /*アンダーバー*/
+}
+.c-content-title ::after {
+  content: "";
+  width: 63px;
+  height: 4px;
+  background-color: #FFFFFF;
+  position: absolute;
+  text-transform: capitalize;
+}
+
+.c-content-title--to {
+  color: #EAEAEA;
+}
+
+.c-content-title--ei {
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
