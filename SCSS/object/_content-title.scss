@@ -1,6 +1,7 @@
 @use "../foundation/" as f;
 .c-content-title{
     position:relative;
+    text-transform: capitalize;
 
     /*アンダーバー*/
     ::after{
@@ -8,7 +9,6 @@
         width:63px;
         height:4px;
         background-color: f.$color-white;
-        position:absolute;
-        text-transform: capitalize;
+        position:absolute; 
     }
 }

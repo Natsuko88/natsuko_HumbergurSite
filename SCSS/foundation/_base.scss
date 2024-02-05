@@ -1,7 +1,10 @@
+@use "variables" as v;
+
 html{
     font-size:62.5%;
 }
 body{
+    color:v.$color-letterblack;
     font-family: 'M+PLUS+1','Roboto';
     font-size: 1.6rem;
     font-weight: 700;
@@ -9,4 +12,7 @@ body{
 }
 a{
     text-decoration: none;
+}
+p{
+    line-height: 1.7;
 }

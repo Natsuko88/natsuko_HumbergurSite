@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  color: #3C2A10;
   font-family: "M+PLUS+1", "Roboto";
   font-size: 1.6rem;
   font-weight: 700;
@@ -12,6 +13,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+p {
+  line-height: 1.7;
 }
 
 .l-header {
@@ -80,6 +85,7 @@ a {
 
 .c-content-title {
   position: relative;
+  text-transform: capitalize;
   /*アンダーバー*/
 }
 .c-content-title ::after {
@@ -88,7 +94,6 @@ a {
   height: 4px;
   background-color: #FFFFFF;
   position: absolute;
-  text-transform: capitalize;
 }
 
 .c-content-title--to {
@@ -97,5 +102,44 @@ a {
 
 .c-content-title--ei {
   color: #FFFFFF;
+}
+
+.c-location-title {
+  color: #FFFFFF;
+  /*アンダーバー*/
+}
+.c-location-title ::after {
+  content: "";
+  width: 75px;
+  height: 2px;
+  background-color: #FFFFFF;
+  position: absolute;
+}
+
+.c-location-article {
+  color: #FFFFFF;
+}
+
+.c-card-article {
+  font-weight: 400;
+}
+
+.c-menu-sub {
+  font-weight: 400;
+}
+
+.c-footer-link {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.c-copyright {
+  color: #FFFFFF;
+  font-weight: 400;
+}
+
+.p-header {
+  display: flex;
+  justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
