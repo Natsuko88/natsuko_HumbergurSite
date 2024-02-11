@@ -1,4 +1,16 @@
 .p-header{
     display: flex;
     justify-content: space-between;
+
+    /*MenuボタンPCはdisplay:none;*/
+    .c-button--menu{
+        display:none;
+    }
+
+    .c-logo{
+        margin:66px 65px;
+        width:325px;
+        height:75px;
+        font-size:64px;
+    }
 }
