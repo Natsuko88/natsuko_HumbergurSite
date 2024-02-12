@@ -1,6 +1,7 @@
 .p-header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     /*MenuボタンPCはdisplay:none;*/
     .c-button--menu{
@@ -8,9 +9,23 @@
     }
 
     .c-logo{
-        margin:66px 65px;
-        width:325px;
+        margin:20px 20px 20px 65px;
+        width:15vw;
         height:75px;
         font-size:64px;
+    }
+    .p-serch{
+        margin: 10px;
+
+        .c-serchform{
+                height:46px;
+                margin:5px 0;
+                width:20vw;
+            }
+        .c-button--serch{
+            margin:5px 10px;
+            height:46px;
+            width:5vw;
+        }
     }
 }

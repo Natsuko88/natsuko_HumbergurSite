@@ -71,10 +71,12 @@ p {
   border: 1px solid;
   border-color: #707070;
   border-radius: 10px;
+  display: block;
 }
 
 .p-serch {
   display: flex;
+  align-items: center;
 }
 
 .c-page-title {
@@ -85,6 +87,11 @@ p {
   background-image: url(../../img/mainvisual-pc.jpg);
   background-size: cover;
   height: 530px;
+  display: flex;
+  align-items: center;
+}
+.p-tophead .c-page-title {
+  margin-left: 4vw;
 }
 
 .c-content-title {
@@ -92,12 +99,14 @@ p {
   text-transform: capitalize;
   /*アンダーバー*/
 }
-.c-content-title ::after {
+.c-content-title::before {
   content: "";
-  width: 63px;
+  display: inline-block;
+  width: 19%;
   height: 4px;
   background-color: #FFFFFF;
   position: absolute;
+  bottom: -4vh;
 }
 
 .c-content-title--to {
@@ -145,27 +154,61 @@ p {
 .p-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   /*MenuボタンPCはdisplay:none;*/
 }
 .p-header .c-button--menu {
   display: none;
 }
 .p-header .c-logo {
-  margin: 66px 65px;
-  width: 325px;
+  margin: 20px 20px 20px 65px;
+  width: 15vw;
   height: 75px;
   font-size: 64px;
+}
+.p-header .p-serch {
+  margin: 10px;
+}
+.p-header .p-serch .c-serchform {
+  height: 46px;
+  margin: 5px 0;
+  width: 20vw;
+}
+.p-header .p-serch .c-button--serch {
+  margin: 5px 10px;
+  height: 46px;
+  width: 5vw;
 }
 
 .p-serchform {
   position: relative;
   /*虫眼鏡マークは疑似要素*/
 }
-.p-serchform ::before {
+.p-serchform::before {
   content: url(../../img/serch.png);
   display: inline-block;
   width: auto;
   height: auto;
   position: absolute;
+  padding: 15px;
+}
+
+.p-article--front {
+  display: flex;
+  justify-content: space-between;
+  margin: 5vw;
+}
+
+.p-content--front--to {
+  background-image: url(../../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg);
+  background-size: cover;
+  max-width: 617px;
+  margin-right: 10px;
+}
+
+.p-card--front {
+  margin: 10px;
+  background-color: #FFFFFF;
+  opacity: 0.7979;
 }
 /*# sourceMappingURL=style.css.map */

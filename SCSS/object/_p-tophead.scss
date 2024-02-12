@@ -2,4 +2,10 @@
     background-image: url(../../img/mainvisual-pc.jpg);
     background-size: cover;
     height:530px;
+    display:flex;
+    align-items:center;
+
+    .c-page-title{
+        margin-left: 4vw;
+    }
 }

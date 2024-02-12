@@ -1,0 +1,6 @@
+@use "../foundation/" as f;
+.p-card--front{
+    margin:10px;
+    background-color: f.$color-white;
+    opacity: 0.7979;
+}

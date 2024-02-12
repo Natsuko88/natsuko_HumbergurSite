@@ -4,11 +4,13 @@
     text-transform: capitalize;
 
     /*アンダーバー*/
-    ::after{
+   &::before {
         content:"";
-        width:63px;
+        display:inline-block;
+        width:19%;
         height:4px;
         background-color: f.$color-white;
         position:absolute; 
+        bottom:-4vh;
     }
 }
