@@ -97,6 +97,7 @@ p {
 .c-content-title {
   position: relative;
   text-transform: capitalize;
+  color: #FFFFFF;
   /*アンダーバー*/
 }
 .c-content-title::before {
@@ -106,7 +107,7 @@ p {
   height: 4px;
   background-color: #FFFFFF;
   position: absolute;
-  bottom: -4vh;
+  bottom: -50%;
 }
 
 .c-content-title--to {
@@ -198,17 +199,43 @@ p {
   justify-content: space-between;
   margin: 5vw;
 }
+.p-article--front .c-content-title {
+  font-size: 80px;
+  margin-bottom: 110%;
+  padding: 10px;
+}
 
 .p-content--front--to {
   background-image: url(../../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg);
   background-size: cover;
   max-width: 617px;
-  margin-right: 10px;
+  margin-right: 20px;
+  padding: 10px 5px;
 }
 
 .p-card--front {
   margin: 10px;
+  padding: 10px;
   background-color: #FFFFFF;
   opacity: 0.7979;
+  max-width: 585px;
+}
+.p-card--front .c-card-title {
+  font-size: 24px;
+  line-height: 2;
+}
+
+.p-content--front--ei {
+  background-image: url(../../img/oneburgerandpotate.jpg);
+  background-size: cover;
+  max-width: 617px;
+  margin-left: 20px;
+  padding: 10px 5px;
+}
+
+.p-location {
+  background: liner-gradient(#000000, #ffffff), url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
+  background-size: cover;
+  height: auto;
 }
 /*# sourceMappingURL=style.css.map */

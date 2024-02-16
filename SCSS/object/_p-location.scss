@@ -1,0 +1,10 @@
+@use "../foundation/" as f;
+
+.p-location{
+    background:  liner-gradient(#000000,#ffffff),url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg),;
+    //to right,f.$color-black,0.28,61%,f.$color-black,0.5971,61% 39%
+    background-size: cover;
+    height: auto;
+
+
+}

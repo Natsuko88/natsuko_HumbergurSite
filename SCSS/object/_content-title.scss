@@ -2,6 +2,7 @@
 .c-content-title{
     position:relative;
     text-transform: capitalize;
+    color:f.$color-white;
 
     /*アンダーバー*/
    &::before {
@@ -11,6 +12,6 @@
         height:4px;
         background-color: f.$color-white;
         position:absolute; 
-        bottom:-4vh;
+        bottom:-50%;
     }
 }
