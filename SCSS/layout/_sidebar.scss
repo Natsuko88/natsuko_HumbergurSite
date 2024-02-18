@@ -1,3 +1,7 @@
+@use "../foundation/" as f;
+
 .l-sidebar{
     width: 19%;
+    background-color: f.$color-darkbage;
+
 }

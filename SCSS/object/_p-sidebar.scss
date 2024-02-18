@@ -1,0 +1,24 @@
+@use "../foundation/" as f;
+
+.p-sidebar{
+    color:f.$color-gray;
+
+    .c-sidebar-title{
+        margin: 84px 46px;
+        font-size: 3.4rem;
+        line-height:2;
+    }
+
+    .c-menu{
+        margin:84px 46px;
+        font-size: 2.4rem;
+        line-height: 1.5;
+    }
+
+    .c-menu-sub{
+        margin:25px 66px;
+        font-size: 2rem;
+        line-height: 1.5;
+        white-space: nowrap;
+    }
+}

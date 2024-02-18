@@ -13,6 +13,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 p {
@@ -26,6 +27,7 @@ p {
 
 .l-sidebar {
   width: 19%;
+  background-color: #F2EDE9;
 }
 
 .l-footer {
@@ -63,7 +65,7 @@ p {
   color: #707070;
   border-radius: 10px;
   border: 1px solid;
-  border-color: liner-gradient(#F2EDE9, #707070);
+  border-color: linear-gradient(#F2EDE9, #707070);
 }
 
 .c-serchform {
@@ -193,6 +195,11 @@ p {
   position: absolute;
   padding: 15px;
 }
+.p-serchform input {
+  margin-left: 60px;
+  height: 46px;
+  width: 15vw;
+}
 
 .p-article--front {
   display: flex;
@@ -234,8 +241,51 @@ p {
 }
 
 .p-location {
-  background: liner-gradient(#000000, #ffffff), url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
+  background: linear-gradient(to right, rgba(5, 5, 5, 0.5971) 61%, rgba(5, 5, 5, 0.2855) 61% 39%), url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
   background-size: cover;
   height: auto;
+}
+.p-location .p-location-content {
+  width: 61%;
+}
+.p-location .p-location-content .c-content-title {
+  font-size: 36px;
+  padding: 10%;
+}
+.p-location .p-location-content .c-content-title::before {
+  width: 7%;
+  bottom: -10%;
+  height: 2px;
+}
+.p-location .p-location-content .c-location-article {
+  padding: 10%;
+  line-height: 2;
+}
+
+.p-sidebar {
+  color: #707070;
+}
+.p-sidebar .c-sidebar-title {
+  margin: 84px 46px;
+  font-size: 3.4rem;
+  line-height: 2;
+}
+.p-sidebar .c-menu {
+  margin: 84px 46px;
+  font-size: 2.4rem;
+  line-height: 1.5;
+}
+.p-sidebar .c-menu-sub {
+  margin: 25px 66px;
+  font-size: 2rem;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.p-footer {
+  text-align: center;
+}
+.p-footer .c-footer-link {
+  padding: 30px 0;
 }
 /*# sourceMappingURL=style.css.map */
