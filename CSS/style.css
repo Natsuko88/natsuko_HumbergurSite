@@ -210,6 +210,8 @@ p {
   max-width: 617px;
   margin-right: 20px;
   padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .p-card--front {
@@ -218,6 +220,7 @@ p {
   background-color: #FFFFFF;
   opacity: 0.7979;
   max-width: 585px;
+  flex-grow: 1;
 }
 .p-card--front .c-card-title {
   font-size: 24px;
@@ -230,6 +233,8 @@ p {
   max-width: 617px;
   margin-left: 20px;
   padding: 10px 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .p-location {
@@ -303,7 +308,6 @@ p {
 }
 
 .p-card {
-  display: flex;
-  flex-direction: column;
+  flex-grow: 1;
 }
 /*# sourceMappingURL=style.css.map */
