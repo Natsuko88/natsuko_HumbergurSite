@@ -5,4 +5,32 @@
 @use "layout";
 
 //object
-@use "object";
+@use "object/component/button.scss";
+@use "object/component/button--menu.scss";
+@use "object/component/logo.scss";
+@use "object/component/button--serch.scss";
+@use "object/component/serchform.scss";
+@use "object/project/p-serch.scss";
+@use "object/component/page-title";
+@use "object/project/p-tophead";
+@use "object/component/content-title";
+@use "object/component/content-title--to";
+@use "object/component/content-title--ei";
+@use "object/component/location-title";
+@use "object/component/location-article";
+@use "object/component/card-article";
+@use "object/component/menu-sub";
+@use "object/component/footer-link";
+@use "object/component/copyright";
+@use "object/project/p-header";
+@use "object/project/p-serchform";
+@use "object/project/p-article--front";
+@use "object/project/p-content--front--to";
+@use "object/project/p-card--front";
+@use "object/project/p-content--front--ei";
+@use "object/project/p-location";
+@use "object/project/p-sidebar";
+@use "object/project/p-footer";
+@use "object/project/wrapper-main";
+@use "object/project/wrapper-wide";
+@use "object/project/p-card";
