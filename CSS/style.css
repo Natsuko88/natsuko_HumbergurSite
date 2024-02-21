@@ -48,7 +48,7 @@ p {
   color: #707070;
 }
 
-.c-logo {
+.p-logo {
   color: #707070;
 }
 
@@ -60,7 +60,7 @@ p {
   border-color: linear-gradient(#F2EDE9, #707070);
 }
 
-.c-serchform {
+.p-serchform-form {
   background-color: #FFFFFF;
   border: 1px solid;
   border-color: #707070;
@@ -132,7 +132,7 @@ p {
   font-weight: 400;
 }
 
-.c-menu-sub {
+.p-menu-sub {
   font-weight: 400;
 }
 
@@ -141,7 +141,7 @@ p {
   font-weight: 400;
 }
 
-.c-copyright {
+.p-copyright {
   color: #FFFFFF;
   font-weight: 400;
 }
@@ -155,7 +155,7 @@ p {
 .p-header .c-button--menu {
   display: none;
 }
-.p-header .c-logo {
+.p-header .p-logo {
   margin: 20px 20px 20px 65px;
   width: 15vw;
   height: 75px;
@@ -267,12 +267,12 @@ p {
   font-size: 3.4rem;
   line-height: 2;
 }
-.p-sidebar .c-menu {
+.p-sidebar .p-menu-title {
   margin: 84px 46px;
   font-size: 2.4rem;
   line-height: 1.5;
 }
-.p-sidebar .c-menu-sub {
+.p-sidebar .p-menu-sub {
   margin: 25px 66px;
   font-size: 2rem;
   line-height: 1.5;
