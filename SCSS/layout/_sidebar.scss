@@ -1,7 +1,13 @@
 @use "../foundation/" as f;
 
 .l-sidebar{
-    width: 19%;
-    background-color: f.$color-darkbage;
+    display:none;
+
+    //pc
+    @include f.pc{
+        display: block;
+        width: 19%;
+        background-color: f.$color-darkbage;
+    }
 
 }

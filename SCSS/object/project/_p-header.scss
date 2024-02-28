@@ -1,31 +1,67 @@
+@use "../../foundation/" as f;
+
 .p-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    /*MenuボタンPCはdisplay:none;*/
     .c-button--menu{
-        display:none;
+        display:block;
+        font-size: 20px;
+        line-height:1.5;
+        margin:0 0 0 auto;
+        position:relative;
     }
-
+    
+    
     .p-logo{
-        margin:20px 20px 20px 65px;
-        width:15vw;
-        height:75px;
-        font-size:64px;
+        font-size:40px;
+        margin:10px;
+        text-align: center;
     }
+    
     .p-serch{
         margin: 10px;
 
-        .c-serchform{
+        .p-serchform{
                 height:46px;
                 margin:5px 0;
-                width:20vw;
+                width:60vw;
             }
         .c-button--serch{
             margin:5px 10px;
             height:46px;
-            width:5vw;
+            width:15vw;
+        }
+    }
+    //tab
+    @include f.tab{
+        .c-button--menu{
+            font-size:40px;
+        }
+        .p-serchform{
+            width:50vw
+        }
+    }
+    //pc
+    @include f.pc{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        /*MenuボタンPCはdisplay:none;*/
+        .c-button--menu{
+            display:none;
+        }
+        .p-logo{
+            margin:20px 20px 20px 65px;
+            width:15vw;
+            height:75px;
+            font-size:64px;
+        }
+        .p-serch{
+            .p-serchform{
+                    width:20vw;
+                }
+            .c-button--serch{
+                width:5vw;
+            }
         }
     }
 }

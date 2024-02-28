@@ -22,3 +22,37 @@
         white-space: nowrap;
     }
 }
+
+//ハンバーガーボタン
+.js-sidebar-title{
+    &::before{
+        content:"";
+        width:45px;
+        height:6px;
+        background-color:f.$color-gray;
+        position:absolute;
+        display:none;
+    }
+
+    &::after{
+        content:"";
+        width:45px;
+        height:6px;
+        background-color:f.$color-gray ;
+        position:absolute;
+        display:none;
+    }
+}
+.is-active{
+    //display:none; //Menuのみ消す
+    &::before{
+        display:block;
+        transform: translateY(30px) rotate(45deg);
+    }
+    &::after{
+        display: block;
+        transform: translateY(-30px) rotate(-45deg);
+    }
+
+}
+//ハンバーガーボタンここまで

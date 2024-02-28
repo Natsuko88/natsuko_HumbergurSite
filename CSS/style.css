@@ -26,8 +26,14 @@ p {
 }
 
 .l-sidebar {
-  width: 19%;
-  background-color: #F2EDE9;
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .l-sidebar {
+    display: block;
+    width: 19%;
+    background-color: #F2EDE9;
+  }
 }
 
 .l-footer {
@@ -71,16 +77,23 @@ p {
 .p-serch {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
+@media screen and (min-width: 1025px) {
+  .p-serch {
+    display: flex;
+    align-items: center;
+  }
+}
 .c-page-title {
   color: #FFFFFF;
 }
 
 .p-tophead {
-  background-image: url(../../img/mainvisual-pc.jpg);
+  background-image: url(../../../img/mainvisual-sp.jpg);
   background-size: cover;
-  height: 530px;
+  height: 285px;
   display: flex;
   align-items: center;
 }
@@ -88,6 +101,17 @@ p {
   margin-left: 4vw;
 }
 
+@media screen and (min-width: 480px) {
+  .p-tophead {
+    background-image: url(../../../img/mainvisual-tab.jpg);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-tophead {
+    background-image: url(../../../img/mainvisual-pc.jpg);
+    height: 530px;
+  }
+}
 .c-content-title {
   position: relative;
   text-transform: capitalize;
@@ -97,13 +121,18 @@ p {
 .c-content-title::before {
   content: "";
   display: inline-block;
-  width: 19%;
+  width: 10%;
   height: 4px;
   background-color: #FFFFFF;
   position: absolute;
   bottom: -50%;
 }
 
+@media screen and (min-width: 1025px) {
+  .c-content-title::before {
+    width: 19%;
+  }
+}
 .c-content-title--to {
   color: #EAEAEA;
 }
@@ -146,33 +175,85 @@ p {
   font-weight: 400;
 }
 
-.p-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /*MenuボタンPCはdisplay:none;*/
-}
 .p-header .c-button--menu {
+  display: block;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 0 0 auto;
+  position: relative;
+}
+.p-header .js-c-button--menu::before {
+  content: "";
+  width: 45px;
+  height: 6px;
+  background-color: #707070;
+  position: absolute;
   display: none;
 }
+.p-header .js-c-button--menu::after {
+  content: "";
+  width: 45px;
+  height: 6px;
+  background-color: #707070;
+  position: absolute;
+  display: none;
+}
+.p-header .is-active::before {
+  display: block;
+  transform: translateY(30px) rotate(45deg);
+}
+.p-header .is-active::after {
+  display: block;
+  transform: translateY(-30px) rotate(-45deg);
+}
 .p-header .p-logo {
-  margin: 20px 20px 20px 65px;
-  width: 15vw;
-  height: 75px;
-  font-size: 64px;
+  font-size: 40px;
+  margin: 10px;
+  text-align: center;
 }
 .p-header .p-serch {
   margin: 10px;
 }
-.p-header .p-serch .c-serchform {
+.p-header .p-serch .p-serchform {
   height: 46px;
   margin: 5px 0;
-  width: 20vw;
+  width: 60vw;
 }
 .p-header .p-serch .c-button--serch {
   margin: 5px 10px;
   height: 46px;
-  width: 5vw;
+  width: 15vw;
+}
+@media screen and (min-width: 480px) {
+  .p-header .c-button--menu {
+    font-size: 40px;
+  }
+  .p-header .p-serchform {
+    width: 50vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*MenuボタンPCはdisplay:none;*/
+  }
+  .p-header .c-button--menu {
+    display: none;
+  }
+  .p-header .p-logo {
+    margin: 20px 20px 20px 65px;
+    width: 15vw;
+    height: 75px;
+    font-size: 64px;
+  }
+  .p-header .p-serch .p-serchform {
+    width: 20vw;
+  }
+  .p-header .p-serch .c-button--serch {
+    width: 5vw;
+  }
 }
 
 .p-serchform {
@@ -195,25 +276,48 @@ p {
 
 .p-article--front {
   display: flex;
-  justify-content: space-between;
-  margin: 5vw;
+  flex-direction: column;
+  margin: 10px;
 }
 .p-article--front .c-content-title {
-  font-size: 80px;
-  margin-bottom: 110%;
+  font-size: 44px;
+  margin-bottom: 50%;
   padding: 10px;
 }
 
+@media screen and (min-width: 480px) {
+  .p-article--front {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5vw;
+  }
+  .p-article--front .c-content-title {
+    margin-bottom: 110%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-content-title {
+    font-size: 80px;
+  }
+}
 .p-content--front--to {
   background-image: url(../../img/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.jpg);
   background-size: cover;
-  max-width: 617px;
-  margin-right: 20px;
+  max-width: 480px;
+  margin: 10px;
   padding: 10px 5px;
   display: flex;
   flex-direction: column;
 }
 
+@media screen and (min-width: 480px) {
+  .p-content--front--to {
+    max-width: 617px;
+    margin-right: 20px;
+    padding: 10px 5px;
+  }
+}
 .p-card--front {
   margin: 10px;
   padding: 10px;
@@ -230,35 +334,61 @@ p {
 .p-content--front--ei {
   background-image: url(../../img/oneburgerandpotate.jpg);
   background-size: cover;
-  max-width: 617px;
-  margin-left: 20px;
+  max-width: 480px;
+  margin: 10px;
   padding: 10px 5px;
   display: flex;
   flex-direction: column;
 }
 
+@media screen and (min-width: 480px) {
+  .p-content--front--ei {
+    max-width: 617px;
+    margin-left: 20px;
+    padding: 10px 5px;
+  }
+}
 .p-location {
-  background: linear-gradient(to right, rgba(5, 5, 5, 0.5971) 61%, rgba(5, 5, 5, 0.2855) 61% 39%), url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
+  background: linear-gradient(rgba(5, 5, 5, 0.5971) 61%, rgba(5, 5, 5, 0.2855) 61% 39%), url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
   background-size: cover;
   height: auto;
 }
 .p-location .p-location-content {
-  width: 61%;
+  width: 100%;
 }
 .p-location .p-location-content .c-content-title {
-  font-size: 36px;
-  padding: 10%;
+  font-size: 30px;
+  padding: 5%;
 }
 .p-location .p-location-content .c-content-title::before {
   width: 7%;
-  bottom: -10%;
+  bottom: -1%;
   height: 2px;
 }
 .p-location .p-location-content .c-location-article {
-  padding: 10%;
+  padding: 5%;
   line-height: 2;
 }
 
+@media screen and (min-width: 480px) {
+  .p-location {
+    background: linear-gradient(rgba(5, 5, 5, 0.2855), rgba(5, 5, 5, 0.2855)), url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
+  }
+  .p-location .c-content-title {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-location {
+    background: linear-gradient(to right, rgba(5, 5, 5, 0.5971) 61%, rgba(5, 5, 5, 0.2855) 61% 39%), url(../../img/スクリーンショット\ 2020-02-10\ 11.47.42.jpg);
+  }
+  .p-location .p-location-content {
+    width: 61%;
+  }
+  .p-location .p-location-content .c-content-title::before {
+    bottom: -10%;
+  }
+}
 .p-sidebar {
   color: #707070;
 }
@@ -300,14 +430,15 @@ p {
 }
 
 .l-wrapper-main {
-  width: 81%;
+  width: 100%;
+}
+@media screen and (min-width: 1025px) {
+  .l-wrapper-main {
+    width: 81%;
+  }
 }
 
 .l-wrapper-wide {
   display: flex;
-}
-
-.p-card {
-  flex-grow: 1;
 }
 /*# sourceMappingURL=style.css.map */

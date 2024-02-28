@@ -8,10 +8,16 @@
    &::before {
         content:"";
         display:inline-block;
-        width:19%;
+        width:10%;
         height:4px;
         background-color: f.$color-white;
         position:absolute; 
         bottom:-50%;
+    }
+}
+
+@include f.pc{
+    .c-content-title::before{
+        width:19%;
     }
 }
