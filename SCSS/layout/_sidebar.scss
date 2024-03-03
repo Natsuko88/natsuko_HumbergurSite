@@ -1,7 +1,9 @@
 @use "../foundation/" as f;
 
 .l-sidebar{
-    display:none;
+    right:-100%;
+    transition: all .3s;
+
 
     //pc
     @include f.pc{
@@ -10,4 +12,22 @@
         background-color: f.$color-darkbage;
     }
 
+}
+
+/*Menuクリック後*/
+.c-wrapper-wide{
+    .l-sidebar.is-active{
+        display:block;
+        width:87%;
+        background-color: f.$color-darkbage;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    @include f.tab{
+       .l-sidebar.is-active{
+            width:40%;
+        }
+    }
 }

@@ -2,8 +2,10 @@
 
 .p-sidebar{
     color:f.$color-gray;
+    position: relative;
+    z-index:100;
 
-    .c-sidebar-title{
+    .c-button--menu{
         margin: 84px 46px;
         font-size: 3.4rem;
         line-height:2;
@@ -21,38 +23,16 @@
         line-height: 1.5;
         white-space: nowrap;
     }
-}
 
-//ハンバーガーボタン
-.js-sidebar-title{
-    &::before{
-        content:"";
-        width:45px;
-        height:6px;
-        background-color:f.$color-gray;
-        position:absolute;
-        display:none;
-    }
+    .c-button--menu.is-active{
+        /*Menuのみ消す*/
+        color:f.$color-darkbage;
+        left:80%;
+        position: relative;
+        z-index:110;
+        margin: 10px;
+        width: 100%;
 
-    &::after{
-        content:"";
-        width:45px;
-        height:6px;
-        background-color:f.$color-gray ;
-        position:absolute;
-        display:none;
     }
+    /*メニューボタンここまで*/
 }
-.is-active{
-    //display:none; //Menuのみ消す
-    &::before{
-        display:block;
-        transform: translateY(30px) rotate(45deg);
-    }
-    &::after{
-        display: block;
-        transform: translateY(-30px) rotate(-45deg);
-    }
-
-}
-//ハンバーガーボタンここまで

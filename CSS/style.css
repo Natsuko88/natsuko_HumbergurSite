@@ -9,6 +9,8 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 a {
@@ -26,13 +28,29 @@ p {
 }
 
 .l-sidebar {
-  display: none;
+  right: -100%;
+  transition: all 0.3s;
 }
 @media screen and (min-width: 1025px) {
   .l-sidebar {
     display: block;
     width: 19%;
     background-color: #F2EDE9;
+  }
+}
+
+/*Menuクリック後*/
+.c-wrapper-wide .l-sidebar.is-active {
+  display: block;
+  width: 87%;
+  background-color: #F2EDE9;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media screen and (min-width: 480px) {
+  .c-wrapper-wide .l-sidebar.is-active {
+    width: 40%;
   }
 }
 
@@ -175,36 +193,57 @@ p {
   font-weight: 400;
 }
 
+.p-header {
+  /*menuボタン*/
+  /*メニューボタンここまで*/
+}
 .p-header .c-button--menu {
   display: block;
   font-size: 20px;
   line-height: 1.5;
   margin: 0 0 0 auto;
   position: relative;
+  z-index: 120;
 }
-.p-header .js-c-button--menu::before {
+.p-header .c-button--menu::before {
   content: "";
   width: 45px;
   height: 6px;
   background-color: #707070;
   position: absolute;
   display: none;
+  z-index: 120;
+  transition: all 0.3s;
 }
-.p-header .js-c-button--menu::after {
+.p-header .c-button--menu::after {
   content: "";
   width: 45px;
   height: 6px;
   background-color: #707070;
   position: absolute;
   display: none;
+  z-index: 120;
+  transition: all 0.3s;
 }
-.p-header .is-active::before {
-  display: block;
-  transform: translateY(30px) rotate(45deg);
+.p-header .c-button--menu.is-active {
+  /*Menuのみ消す*/
+  color: #F2EDE9;
+  left: 90%;
+  position: relative;
+  z-index: 120;
+  width: 100%;
 }
-.p-header .is-active::after {
+.p-header .c-button--menu.is-active::before {
   display: block;
-  transform: translateY(-30px) rotate(-45deg);
+  transform: rotate(45deg);
+  top: 50%;
+  z-index: 120;
+}
+.p-header .c-button--menu.is-active::after {
+  display: block;
+  transform: rotate(-45deg);
+  bottom: 45%;
+  z-index: 120;
 }
 .p-header .p-logo {
   font-size: 40px;
@@ -227,6 +266,7 @@ p {
 @media screen and (min-width: 480px) {
   .p-header .c-button--menu {
     font-size: 40px;
+    padding: 15px;
   }
   .p-header .p-serchform {
     width: 50vw;
@@ -391,8 +431,11 @@ p {
 }
 .p-sidebar {
   color: #707070;
+  position: relative;
+  z-index: 100;
+  /*メニューボタンここまで*/
 }
-.p-sidebar .c-sidebar-title {
+.p-sidebar .c-button--menu {
   margin: 84px 46px;
   font-size: 3.4rem;
   line-height: 2;
@@ -407,6 +450,15 @@ p {
   font-size: 2rem;
   line-height: 1.5;
   white-space: nowrap;
+}
+.p-sidebar .c-button--menu.is-active {
+  /*Menuのみ消す*/
+  color: #F2EDE9;
+  left: 80%;
+  position: relative;
+  z-index: 110;
+  margin: 10px;
+  width: 100%;
 }
 
 .p-footer {
@@ -429,16 +481,38 @@ p {
   left: -10px;
 }
 
-.l-wrapper-main {
-  width: 100%;
+.c-wrapper-main {
+  width: 100vw;
+  position: relative;
 }
 @media screen and (min-width: 1025px) {
-  .l-wrapper-main {
+  .c-wrapper-main {
     width: 81%;
   }
 }
 
-.l-wrapper-wide {
-  display: flex;
+.c-wrapper-wide {
+  position: relative;
+}
+
+@media screen and (min-width: 1025px) {
+  .c-wrapper-wide {
+    display: flex;
+  }
+}
+.p-black-layer {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.52);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.p-black-layer.is-active {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

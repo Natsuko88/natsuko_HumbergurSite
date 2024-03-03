@@ -1,3 +1,14 @@
-.l-wrapper-wide{
-    display:flex;
+@use "../../foundation/" as f;
+
+.c-wrapper-wide{
+    position:relative;
+}
+
+
+//PC
+@include f.pc{
+    .c-wrapper-wide{
+        display:flex;
+    }
+    
 }

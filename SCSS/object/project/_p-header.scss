@@ -7,7 +7,56 @@
         line-height:1.5;
         margin:0 0 0 auto;
         position:relative;
+        z-index:120;
     }
+
+     /*menuボタン*/
+    .c-button--menu::before{
+        content:"";
+        width:45px;
+        height:6px;
+        background-color:f.$color-gray;
+        position:absolute;
+        display:none;
+        z-index:120;
+        transition: all .3s;
+    }
+    
+    .c-button--menu::after{
+        content:"";
+        width:45px;
+        height:6px;
+        background-color:f.$color-gray ;
+        position:absolute;
+        display:none;
+        z-index:120;
+        transition: all .3s;
+    }
+    
+    .c-button--menu.is-active{
+        /*Menuのみ消す*/
+        color:f.$color-darkbage;
+        left:90%;
+        position: relative;
+        z-index:120;
+        width: 100%;
+    }
+
+    .c-button--menu.is-active::before{
+        display:block;
+        transform:rotate(45deg);
+        top:50%;
+        z-index: 120;
+    }
+    .c-button--menu.is-active::after{
+        display: block;
+        transform:rotate(-45deg);
+        bottom:45%;
+        z-index: 120;
+    }
+
+
+    /*メニューボタンここまで*/
     
     
     .p-logo{
@@ -29,11 +78,13 @@
             height:46px;
             width:15vw;
         }
+        
     }
     //tab
     @include f.tab{
         .c-button--menu{
             font-size:40px;
+            padding:15px;
         }
         .p-serchform{
             width:50vw

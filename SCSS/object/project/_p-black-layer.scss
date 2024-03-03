@@ -1,0 +1,14 @@
+.p-black-layer{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.52);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:1;
+    transition: all .3s;
+}
+.p-black-layer.is-active{
+    display:block;
+}
