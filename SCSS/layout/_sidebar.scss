@@ -3,6 +3,7 @@
 .l-sidebar{
     right:-100%;
     transition: all .3s;
+    display:none;
 
 
     //pc
@@ -10,6 +11,7 @@
         display: block;
         width: 19%;
         background-color: f.$color-darkbage;
+        right:0;
     }
 
 }

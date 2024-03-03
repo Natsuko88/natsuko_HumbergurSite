@@ -10,7 +10,6 @@ body {
   font-weight: 700;
   width: 100%;
   position: relative;
-  overflow: hidden;
 }
 
 a {
@@ -30,16 +29,16 @@ p {
 .l-sidebar {
   right: -100%;
   transition: all 0.3s;
+  display: none;
 }
 @media screen and (min-width: 1025px) {
   .l-sidebar {
     display: block;
     width: 19%;
     background-color: #F2EDE9;
+    right: 0;
   }
-}
-
-/*Menuクリック後*/
+} /*Menuクリック後*/
 .c-wrapper-wide .l-sidebar.is-active {
   display: block;
   width: 87%;
@@ -493,6 +492,7 @@ p {
 
 .c-wrapper-wide {
   position: relative;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 1025px) {
