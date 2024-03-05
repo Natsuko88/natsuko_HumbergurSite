@@ -12,6 +12,10 @@ body {
   position: relative;
 }
 
+body.is-active {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -42,10 +46,12 @@ p {
 .c-wrapper-wide .l-sidebar.is-active {
   display: block;
   width: 87%;
+  height: 100%;
   background-color: #F2EDE9;
   position: absolute;
   top: 0;
   right: 0;
+  overflow: scroll;
 }
 @media screen and (min-width: 480px) {
   .c-wrapper-wide .l-sidebar.is-active {
@@ -265,7 +271,7 @@ p {
 @media screen and (min-width: 480px) {
   .p-header .c-button--menu {
     font-size: 40px;
-    padding: 15px;
+    padding: 15px 20px 0 15px;
   }
   .p-header .p-serchform {
     width: 50vw;
@@ -348,6 +354,7 @@ p {
   padding: 10px 5px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 480px) {
@@ -363,7 +370,6 @@ p {
   background-color: #FFFFFF;
   opacity: 0.7979;
   max-width: 585px;
-  flex-grow: 1;
 }
 .p-card--front .c-card-title {
   font-size: 24px;
@@ -378,6 +384,7 @@ p {
   padding: 10px 5px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 @media screen and (min-width: 480px) {
@@ -490,6 +497,10 @@ p {
   }
 }
 
+.c-wrapper-main.is-active {
+  overflow: hidden;
+}
+
 .c-wrapper-wide {
   position: relative;
   overflow: hidden;
@@ -514,5 +525,11 @@ p {
 
 .p-black-layer.is-active {
   display: block;
+}
+
+.p-card-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 /*# sourceMappingURL=style.css.map */

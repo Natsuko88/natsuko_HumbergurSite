@@ -21,10 +21,12 @@
     .l-sidebar.is-active{
         display:block;
         width:87%;
+        height: 100%;
         background-color: f.$color-darkbage;
         position: absolute;
         top: 0;
         right: 0;
+        overflow: scroll;
     }
 
     @include f.tab{
