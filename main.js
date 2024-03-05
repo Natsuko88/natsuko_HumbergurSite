@@ -17,7 +17,7 @@ mBtn.addEventListener('click',()=> {
         mBtnSide.classList.toggle('is-active');
         bLayer.classList.toggle('is-active');
        // wrapperMain.classList.toggle('is-active');
-        body.classList.toggle('is-active');
+       // body.classList.toggle('is-active');
     });
 
 //リサイズ
@@ -27,6 +27,6 @@ mBtn.addEventListener('click',()=> {
         mBtnSide.classList.remove('is-active');
         bLayer.classList.remove('is-active');
        // wrapperMain.classList.remove('is-active');
-        body.classList.remove('is-active');
+        //body.classList.remove('is-active');
     });
   
