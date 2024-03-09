@@ -12,7 +12,11 @@ body{
     position: relative;
 }
 body.is-active{
-    overflow: hidden;
+    overflow:hidden;
+    position:fixed;
+    height:100%;
+    top:0;
+    left:0;
 }
 a{
     text-decoration: none;
