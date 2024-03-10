@@ -16,7 +16,6 @@ mBtn.addEventListener('click',()=> {
         lSide.classList.toggle('is-active');
         mBtnSide.classList.toggle('is-active');
         bLayer.classList.toggle('is-active');
-        //wrapperMain.classList.toggle('is-active');
         body.classList.toggle('is-active');
     });
 

@@ -10,6 +10,9 @@ body {
   font-weight: 700;
   width: 100%;
   position: relative;
+  transition: all 3s;
+  top: 0;
+  left: 0;
 }
 
 body.is-active {
@@ -35,9 +38,13 @@ p {
 }
 
 .l-sidebar {
-  right: -100%;
-  transition: all 0.3s;
-  display: none;
+  top: 0;
+  right: 0;
+  width: 0%;
+  transition: all 3s;
+  white-space: nowrap;
+  position: absolute;
+  overflow-x: hidden;
 }
 @media screen and (min-width: 1025px) {
   .l-sidebar {
@@ -50,16 +57,14 @@ p {
 
 /*Menuクリック後*/
 .c-wrapper-wide .l-sidebar.is-active {
-  display: block;
   width: 87%;
   max-height: 100vh;
-  height: 200%;
+  height: 100%;
   background-color: #F2EDE9;
   position: absolute;
   top: 0;
   right: 0;
   overflow-y: scroll;
-  overflow-x: hidden;
   z-index: 100;
 }
 @media screen and (min-width: 480px) {
@@ -218,6 +223,7 @@ p {
   margin: 0 0 0 auto;
   position: relative;
   z-index: 120;
+  transition: all 3s;
 }
 .p-header .c-button--menu::before {
   content: "";
@@ -227,7 +233,6 @@ p {
   position: absolute;
   display: none;
   z-index: 120;
-  transition: all 0.3s;
 }
 .p-header .c-button--menu::after {
   content: "";
@@ -237,7 +242,6 @@ p {
   position: absolute;
   display: none;
   z-index: 120;
-  transition: all 0.3s;
 }
 .p-header .c-button--menu.is-active {
   /*Menuのみ消す*/
@@ -506,13 +510,8 @@ p {
   }
 }
 
-.c-wrapper-main.is-active {
-  overflow: hidden;
-}
-
 .c-wrapper-wide {
   position: relative;
-  overflow: hidden;
 }
 
 @media screen and (min-width: 1025px) {
@@ -521,7 +520,7 @@ p {
   }
 }
 .p-black-layer {
-  display: none;
+  visibility: hidden;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.52);
@@ -529,11 +528,13 @@ p {
   top: 0;
   left: 0;
   z-index: 1;
-  transition: all 0.3s;
+  transition: all 3s;
+  opacity: 0;
 }
 
 .p-black-layer.is-active {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .p-card-flex {

@@ -1,9 +1,13 @@
 @use "../foundation/" as f;
 
 .l-sidebar{
-    right:-100%;
-    transition: all .3s;
-    display:none;
+    top:0;
+    right:0;
+    width:0%;
+    transition: all 3s;
+    white-space: nowrap;
+    position:absolute;
+    overflow-x: hidden;
 
     //pc
     @include f.pc{
@@ -18,16 +22,14 @@
 /*Menuクリック後*/
 .c-wrapper-wide{
     .l-sidebar.is-active{
-        display:block;
         width:87%;
         max-height: 100vh;
-        height:200%;
+        height:100%;
         background-color: f.$color-darkbage;
         position: absolute;
         top: 0;
         right: 0;
         overflow-y: scroll;
-        overflow-x: hidden;
         z-index: 100;
     }
 

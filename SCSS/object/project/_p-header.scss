@@ -8,6 +8,7 @@
         margin:0 0 0 auto;
         position:relative;
         z-index:120;
+        transition: all 3s;
     }
 
      /*menuボタン*/
@@ -17,9 +18,9 @@
         height:6px;
         background-color:f.$color-gray;
         position:absolute;
-        display:none;
+        display: none;
         z-index:120;
-        transition: all .3s;
+        
     }
     
     .c-button--menu::after{
@@ -28,9 +29,9 @@
         height:6px;
         background-color:f.$color-gray ;
         position:absolute;
-        display:none;
+        display: none;
         z-index:120;
-        transition: all .3s;
+        
     }
     
     .c-button--menu.is-active{
