@@ -1,0 +1,14 @@
+@use "../../foundation/" as f;
+
+.p-card--archive{
+    display: flex;
+    margin:10px 0;
+    padding:5px 0;
+
+    .c-article-img{
+        width:50%;
+        height:25%;
+    }
+
+    
+}

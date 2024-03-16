@@ -9,6 +9,13 @@
         margin: 84px 46px;
         font-size: 3.4rem;
         line-height:2;
+        display:none;
+    }
+
+    @include f.pc{
+        .c-button--menu{
+            display: block;
+        }
     }
 
     .p-menu-title{
@@ -26,7 +33,7 @@
 
     .c-button--menu.is-active{
         /*Menuのみ消す*/
-        color:f.$color-darkbage;
+        visibility: none;
         left:80%;
         position: relative;
         z-index:110;

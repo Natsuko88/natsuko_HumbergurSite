@@ -2,13 +2,13 @@
 
 .p-header{
     .c-button--menu{
-        display:block;
+        display: block;
         font-size: 20px;
         line-height:1.5;
         margin:0 0 0 auto;
         position:relative;
         z-index:120;
-        transition: all 3s;
+        transition: all .6s;
     }
 
      /*menuボタン*/
@@ -18,8 +18,9 @@
         height:6px;
         background-color:f.$color-gray;
         position:absolute;
-        display: none;
+        visibility: hidden;
         z-index:120;
+        display: block;
         
     }
     
@@ -29,8 +30,9 @@
         height:6px;
         background-color:f.$color-gray ;
         position:absolute;
-        display: none;
+        visibility: hidden;
         z-index:120;
+        display: block;
         
     }
     
@@ -44,13 +46,13 @@
     }
 
     .c-button--menu.is-active::before{
-        display:block;
+        visibility: visible;
         transform:rotate(45deg);
         top:50%;
         z-index: 120;
     }
     .c-button--menu.is-active::after{
-        display: block;
+        visibility: visible;
         transform:rotate(-45deg);
         bottom:45%;
         z-index: 120;

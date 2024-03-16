@@ -10,7 +10,6 @@ body {
   font-weight: 700;
   width: 100%;
   position: relative;
-  transition: all 3s;
   top: 0;
   left: 0;
 }
@@ -39,9 +38,7 @@ p {
 
 .l-sidebar {
   top: 0;
-  right: 0;
-  width: 0%;
-  transition: all 3s;
+  transition: all 0.6s;
   white-space: nowrap;
   position: absolute;
   overflow-x: hidden;
@@ -53,9 +50,7 @@ p {
     background-color: #F2EDE9;
     right: 0;
   }
-}
-
-/*Menuクリック後*/
+} /*Menuクリック後*/
 .c-wrapper-wide .l-sidebar.is-active {
   width: 87%;
   max-height: 100vh;
@@ -223,7 +218,7 @@ p {
   margin: 0 0 0 auto;
   position: relative;
   z-index: 120;
-  transition: all 3s;
+  transition: all 0.6s;
 }
 .p-header .c-button--menu::before {
   content: "";
@@ -231,8 +226,9 @@ p {
   height: 6px;
   background-color: #707070;
   position: absolute;
-  display: none;
+  visibility: hidden;
   z-index: 120;
+  display: block;
 }
 .p-header .c-button--menu::after {
   content: "";
@@ -240,8 +236,9 @@ p {
   height: 6px;
   background-color: #707070;
   position: absolute;
-  display: none;
+  visibility: hidden;
   z-index: 120;
+  display: block;
 }
 .p-header .c-button--menu.is-active {
   /*Menuのみ消す*/
@@ -252,13 +249,13 @@ p {
   width: 100%;
 }
 .p-header .c-button--menu.is-active::before {
-  display: block;
+  visibility: visible;
   transform: rotate(45deg);
   top: 50%;
   z-index: 120;
 }
 .p-header .c-button--menu.is-active::after {
-  display: block;
+  visibility: visible;
   transform: rotate(-45deg);
   bottom: 45%;
   z-index: 120;
@@ -458,6 +455,12 @@ p {
   margin: 84px 46px;
   font-size: 3.4rem;
   line-height: 2;
+  display: none;
+}
+@media screen and (min-width: 1025px) {
+  .p-sidebar .c-button--menu {
+    display: block;
+  }
 }
 .p-sidebar .p-menu-title {
   margin: 84px 46px;
@@ -472,7 +475,7 @@ p {
 }
 .p-sidebar .c-button--menu.is-active {
   /*Menuのみ消す*/
-  color: #F2EDE9;
+  visibility: none;
   left: 80%;
   position: relative;
   z-index: 110;
@@ -512,6 +515,8 @@ p {
 
 .c-wrapper-wide {
   position: relative;
+  overflow-x: hidden;
+  display: flex;
 }
 
 @media screen and (min-width: 1025px) {
@@ -521,25 +526,88 @@ p {
 }
 .p-black-layer {
   visibility: hidden;
-  width: 100vw;
-  height: 100vh;
   background-color: rgba(0, 0, 0, 0.52);
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
-  transition: all 3s;
+  transition: all 0.6s;
   opacity: 0;
 }
 
 .p-black-layer.is-active {
   visibility: visible;
   opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
 }
 
 .p-card-flex {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.p-tophead--archive {
+  background-image: url(../../../img/page-title_arcive.jpg);
+  background-size: cover;
+  height: 239px;
+  display: flex;
+  align-items: center;
+}
+.p-tophead--archive .c-page-title {
+  margin-left: 4vw;
+  font-size: 60px;
+}
+.p-tophead--archive .u-page-title--sub {
+  margin: 10px;
+}
+
+.u-page-title--sub {
+  color: #FFFFFF;
+  display: block;
+}
+
+.p-article--archive {
+  margin: 4vw;
+}
+.p-article--archive .c-sub-title {
+  padding: 10px 10px 10px 0;
+  font-size: 36px;
+}
+.p-article--archive .c-sub-article {
+  padding: 10px 10px 10px 0;
+}
+
+.p-card--archive {
+  display: flex;
+  margin: 10px 0;
+  padding: 5px 0;
+}
+.p-card--archive .c-article-img {
+  width: 50%;
+  height: 25%;
+}
+
+.p-card--archive--article {
+  background-color: #3C2B1C;
+}
+
+.c-content-title--archive::before {
+  display: none;
+}
+
+.c-content-title--sub::before {
+  display: none;
+}
+
+.c-card-article--archive {
+  color: #FFFFFF;
+}
+
+.c-button--detail {
+  background-color: #FFFFFF;
+  color: #707070;
+  border-radius: 30px;
 }
 /*# sourceMappingURL=style.css.map */
