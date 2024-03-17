@@ -1,4 +1,29 @@
 @use "../../foundation/" as f;
 .p-card--archive--article{
     background-color: f.$color-darkbrown;
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    height:25%;
+
+    .c-content-title--archive{
+        font-size: 36px;
+        margin:20px;
+    }
+
+    .c-content-title--sub{
+        margin:10px 20px;
+        font-size: 24px;
+    }
+
+    .c-card-article--archive{
+        margin:10px 20px;
+    }
+    .c-button--detail{
+        height: 76px;
+        width: 40%;
+        padding: 5px 20px;
+        margin:10px;
+        align-self: center;
+    }
 }
