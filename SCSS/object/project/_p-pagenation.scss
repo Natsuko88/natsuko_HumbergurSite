@@ -1,8 +1,24 @@
+@use "../../foundation/" as f;
+
 .p-pagenation{
     display: flex;
+    color:f.$color-gray;
+    align-items: center;
+    justify-content: center;
+    margin:20px;
+
+    .c-button--pagenation{
+        margin:10px;
+    }
 
     .p-pagenation-list{
-        display: inline;
+        display: flex;
+        margin:10px;
+    }
+
+    .c-pagenation,.u-pagenation{
+        margin:10px;
+        padding:10px;
     }
     
 }

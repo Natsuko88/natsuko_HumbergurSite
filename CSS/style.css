@@ -3,6 +3,10 @@ html {
   font-size: 62.5%;
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   color: #3C2A10;
   font-family: "M+PLUS+1", "Roboto";
@@ -29,6 +33,10 @@ a {
 
 p {
   line-height: 1.7;
+}
+
+li {
+  list-style: none;
 }
 
 .l-header {
@@ -586,19 +594,21 @@ p {
   padding: 5px 0;
 }
 .p-card--archive .c-article-img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 50%;
-  height: 25%;
 }
 
 .p-card--archive--article {
   background-color: #3C2B1C;
   display: flex;
   flex-direction: column;
-  width: 50%;
-  height: 25%;
+  flex-basis: 50%;
+  padding: 40px 40px;
 }
 .p-card--archive--article .c-content-title--archive {
-  font-size: 36px;
+  overflow: hidden;
+  font-size: 30px;
   margin: 20px;
 }
 .p-card--archive--article .c-content-title--sub {
@@ -606,13 +616,13 @@ p {
   font-size: 24px;
 }
 .p-card--archive--article .c-card-article--archive {
-  margin: 10px 20px;
+  margin: 20px 20px;
 }
 .p-card--archive--article .c-button--detail {
-  height: 76px;
+  height: 50px;
   width: 40%;
   padding: 5px 20px;
-  margin: 10px;
+  margin: 20px;
   align-self: center;
 }
 
@@ -636,8 +646,31 @@ p {
 
 .p-pagenation {
   display: flex;
+  color: #707070;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.p-pagenation .c-button--pagenation {
+  margin: 10px;
 }
 .p-pagenation .p-pagenation-list {
+  display: flex;
+  margin: 10px;
+}
+.p-pagenation .c-pagenation, .p-pagenation .u-pagenation {
+  margin: 10px;
+  padding: 10px;
+}
+
+.c-pagenation {
   display: inline;
+  color: #707070;
+  border: 1px solid;
+}
+
+.u-pagenation {
+  background-color: #3C2A10;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
