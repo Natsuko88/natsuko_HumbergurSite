@@ -4,11 +4,25 @@
     display: flex;
     margin:10px 0;
     padding:5px 0;
+    flex-direction: column;
 
    .c-article-img{
         object-fit: cover;
-        width:50%;  
+        width:100%;  
     }
 
     
+}
+
+/*tab*/
+/*tab*/
+@include f.tab{
+    .p-card--archive{
+        flex-direction: row;
+
+        .c-article-img{
+            width:50%;  
+        }
+    
+    }
 }

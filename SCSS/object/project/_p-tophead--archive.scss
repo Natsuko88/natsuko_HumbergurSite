@@ -3,7 +3,7 @@
 .p-tophead--archive{
     background-image: url(../../../img/page-title_arcive.jpg);
     background-size: cover;
-    height:239px;
+    height:285px;
     display:flex;
     align-items:center;
 
@@ -15,5 +15,13 @@
         .u-page-title--sub{
             margin: 10px;
         }
+
+}
+
+//PC
+@include f.pc{
+    .p-tophead--archive{
+        height: 239px;;
+    }
 
 }

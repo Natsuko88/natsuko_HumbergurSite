@@ -560,7 +560,7 @@ li {
 .p-tophead--archive {
   background-image: url(../../../img/page-title_arcive.jpg);
   background-size: cover;
-  height: 239px;
+  height: 285px;
   display: flex;
   align-items: center;
 }
@@ -572,6 +572,11 @@ li {
   margin: 10px;
 }
 
+@media screen and (min-width: 1025px) {
+  .p-tophead--archive {
+    height: 239px;
+  }
+}
 .u-page-title--sub {
   color: #FFFFFF;
   display: block;
@@ -582,50 +587,90 @@ li {
 }
 .p-article--archive .c-sub-title {
   padding: 10px 10px 10px 0;
-  font-size: 36px;
+  font-size: 28px;
 }
 .p-article--archive .c-sub-article {
   padding: 10px 10px 10px 0;
 }
 
+/*tab*/
+@media screen and (min-width: 480px) {
+  .p-article--archive .c-sub-title {
+    font-size: 36px;
+  }
+}
 .p-card--archive {
   display: flex;
   margin: 10px 0;
   padding: 5px 0;
+  flex-direction: column;
 }
 .p-card--archive .c-article-img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 50%;
+  width: 100%;
 }
 
+/*tab*/
+/*tab*/
+@media screen and (min-width: 480px) {
+  .p-card--archive {
+    flex-direction: row;
+  }
+  .p-card--archive .c-article-img {
+    width: 50%;
+  }
+}
 .p-card--archive--article {
   background-color: #3C2B1C;
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
-  padding: 40px 40px;
+  padding: 20px 20px;
 }
 .p-card--archive--article .c-content-title--archive {
   overflow: hidden;
-  font-size: 30px;
-  margin: 20px;
+  font-size: 20px;
+  margin: 10px;
 }
 .p-card--archive--article .c-content-title--sub {
-  margin: 10px 20px;
-  font-size: 24px;
+  margin: 5px 10px;
+  font-size: 16px;
 }
 .p-card--archive--article .c-card-article--archive {
-  margin: 20px 20px;
+  margin: 10px 10px;
 }
 .p-card--archive--article .c-button--detail {
-  height: 50px;
-  width: 40%;
-  padding: 5px 20px;
-  margin: 20px;
+  height: 40px;
+  width: 50%;
+  padding: 5px 5px;
+  margin: 10px;
   align-self: center;
 }
 
+/*pc*/
+@media screen and (min-width: 1025px) {
+  .p-card--archive--article {
+    padding: 40px 40px;
+  }
+  .p-card--archive--article .c-content-title--archive {
+    font-size: 30px;
+    margin: 20px;
+  }
+  .p-card--archive--article .c-content-title--sub {
+    margin: 10px 20px;
+    font-size: 24px;
+  }
+  .p-card--archive--article .c-card-article--archive {
+    margin: 20px 20px;
+  }
+  .p-card--archive--article .c-button--detail {
+    height: 50px;
+    width: 40%;
+    padding: 5px 20px;
+    margin: 20px;
+  }
+}
 .c-content-title--archive::before {
   display: none;
 }
@@ -647,22 +692,40 @@ li {
 .p-pagenation {
   display: flex;
   color: #707070;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
+  justify-content: space-between;
+}
+.p-pagenation .c-pagenation-head {
+  display: none;
 }
 .p-pagenation .c-button--pagenation {
   margin: 10px;
 }
 .p-pagenation .p-pagenation-list {
-  display: flex;
-  margin: 10px;
+  display: none;
 }
 .p-pagenation .c-pagenation, .p-pagenation .u-pagenation {
   margin: 10px;
   padding: 10px;
 }
 
+/*tab*/
+@media screen and (min-width: 480px) {
+  .p-pagenation {
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  .p-pagenation .p-pagenation-list {
+    display: flex;
+    margin: 10px;
+  }
+  .p-pagenation .c-pagenation-head {
+    display: block;
+  }
+  .p-pagenation .c-button--page-text {
+    display: none;
+  }
+}
 .c-pagenation {
   display: inline;
   color: #707070;
@@ -672,5 +735,27 @@ li {
 .u-pagenation {
   background-color: #3C2A10;
   color: #FFFFFF;
+}
+
+.u-button--pagenation {
+  display: block;
+}
+.u-button--pagenation img {
+  transform: rotate(-180deg);
+}
+
+/*pc*/
+@media screen and (min-width: 1025px) {
+  .u-button--pagenation {
+    display: none;
+  }
+}
+.c-button--page-text {
+  color: #707070;
+}
+
+.c-button--pagenation {
+  display: flex;
+  align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
