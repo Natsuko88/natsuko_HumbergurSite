@@ -59,7 +59,9 @@ li {
     background-color: #F2EDE9;
     right: 0;
   }
-} /*Menuクリック後*/
+}
+
+/*Menuクリック後*/
 .c-wrapper-wide .l-sidebar.is-active {
   width: 87%;
   max-height: 100vh;
