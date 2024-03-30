@@ -1,5 +1,10 @@
 .p-serchform{
     position:relative;
+    background-color: f.$color-white;
+    border: 1px solid;
+    border-color: f.$color-gray;
+    border-radius: 10px;
+    display:block;
 
     /*虫眼鏡マークは疑似要素*/
     &::before{
